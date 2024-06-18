@@ -102,7 +102,7 @@ def llama_chat_demo(
             is_token_generator=True,
         )
 
-    has_model_access(HF_REPO_NAME, HF_REPO_URL)
+    # has_model_access(HF_REPO_NAME, HF_REPO_URL)
     tokenizer = LlamaTokenizer.from_pretrained(HF_REPO_NAME)
 
     app = App(prompt_processor, token_generator, tokenizer=tokenizer)

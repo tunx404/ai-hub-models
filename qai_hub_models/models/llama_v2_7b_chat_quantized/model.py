@@ -60,7 +60,8 @@ NUM_SPLITS = 4
 LAYERS_PER_SPLIT = 8
 
 # Hugging face repo name and url
-HF_REPO_NAME = "meta-llama/Llama-2-7b-chat-hf"
+# HF_REPO_NAME = "meta-llama/Llama-2-7b-chat-hf"
+HF_REPO_NAME = "/data/mlbooster/models/meta-llama/Llama-2-7b-chat-hf"
 HF_REPO_URL = "https://huggingface.co/meta-llama/Llama-2-7b-chat-hf"
 
 # Minimum memory (RAM+swap) recommended for export.
@@ -394,7 +395,7 @@ def _get_llama_model_with_split(
 
     # Ensure User has access to model,
     # otherwise point to instructions to get access and error out.
-    has_model_access(HF_REPO_NAME, HF_REPO_URL)
+    # has_model_access(HF_REPO_NAME, HF_REPO_URL)
 
     # Ensure User has recommended memory,
     # otherwise, provide warning to user and recommend to increase swap-space as a work-around.
