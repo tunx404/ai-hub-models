@@ -61,7 +61,8 @@ LAYERS_PER_SPLIT = 8
 
 # Hugging face repo name and url
 # HF_REPO_NAME = "meta-llama/Llama-2-7b-chat-hf"
-HF_REPO_NAME = "/data/mlbooster/models/meta-llama/Llama-2-7b-chat-hf"
+# HF_REPO_NAME = "/data/mlbooster/models/meta-llama/Llama-2-7b-chat-hf"
+HF_REPO_NAME = "/home/tunx404/Models/LLM/meta-llama/Llama-2-7b-chat-hf"
 HF_REPO_URL = "https://huggingface.co/meta-llama/Llama-2-7b-chat-hf"
 
 # Minimum memory (RAM+swap) recommended for export.
