@@ -39,6 +39,6 @@ model_path = "/data/mlbooster/exports/qc-hf-llama-7b-v2-chat.aimet"
 compile_job = hub.submit_compile_job(
     model=hub.get_model("m0q9k2g0m"),
     device=hub.Device("Samsung Galaxy S24"),
-    options="--target_runtime qnn_context_binary --quantize_full_type w4a16 --truncate_64_io true --quantize_io true",
+    options="--target_runtime qnn_context_binary --quantize_full_type w4a16 --truncate_64bit_io true --quantize_io true",
 )
 assert isinstance(compile_job, hub.CompileJob)
